@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem Vindo(a)</h1>
+        <button onclick="mostrarCarrinho()">🛒 Ver Carrinho</button>
+    </header>
+    <main>
+        <!-- Seção de Produtos -->
+        <section class="produtos">
+            <article class="produto">
+                <img src="imagens/logo1.jpeg" alt="Coca-Cola">
+                <h2>Coca-Cola</h2>
+                <p>R$ 5,00</p>
+                <button onclick="adicionarAoCarrinho('Coca-Cola', 5)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo2.jpeg" alt="Biscoito">
+                <h2>Biscoito</h2>
+                <p>R$ 3,00</p>
+                <button onclick="adicionarAoCarrinho('Biscoito', 3)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo3.jpeg" alt="Carne de Frango">
+                <h2>Carne de Frango</h2>
+                <p>R$ 16,00</p>
+                <button onclick="adicionarAoCarrinho('Carne de Frango', 16)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo4.jpeg" alt="Carne de Vaca">
+                <h2>Carne de Vaca</h2>
+                <p>R$ 19,00</p>
+                <button onclick="adicionarAoCarrinho('Carne de Vaca', 19)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo5.jpeg" alt="Sorvete">
+                <h2>Sorvete</h2>
+                <p>R$ 7,00</p>
+                <button onclick="adicionarAoCarrinho('Sorvete', 7)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo6.jpeg" alt="Leite">
+                <h2>Leite</h2>
+                <p>R$ 4,00</p>
+                <button onclick="adicionarAoCarrinho('Leite', 4)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo7.jpeg" alt="Limao">
+                <h2>Limão</h2>
+                <p>R$ 1,00</p>
+                <button onclick="adicionarAoCarrinho('Limao', 1)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo8.jpeg" alt="Maçã">
+                <h2>Maçã</h2>
+                <p>R$ 2,00</p>
+                <button onclick="adicionarAoCarrinho('maçã', 2)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo9.jpeg" alt="Salsicha">
+                <h2>Salsicha</h2>
+                <p>R$ 10,00</p>
+                <button onclick="adicionarAoCarrinho('Salsicha', 10)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="produto">
+                <img src="imagens/logo10.jpeg" alt="Suco">
+                <h2>Suco Silvestre</h2>
+                <p>R$ 9,00</p>
+                <button onclick="adicionarAoCarrinho('Suco Silvestre', 9)">Adicionar ao Carrinho</button>
+            </article>
+        </section>
+
+        <!-- Seção do Carrinho -->
+        <section id="carrinho" style="display: none;">
+            <h2>Meu Carrinho</h2>
+            <div id="itensCarrinho">
+                <p>O carrinho está vazio no momento compre agora!.</p>
+            </div>
+            <button onclick="fecharCarrinho()">Fechar Carrinho</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
